@@ -1,23 +1,146 @@
 @font-face {
   font-family: 'Proxima Nova';
-  font-weight: normal;
+  font-weight: 500;
   src: url('fonts/Proxima\ Nova\ Regular.otf');
 }
 
 @font-face {
   font-family: 'Proxima Nova';
-  font-weight: lighter;
+  font-weight: 300;
   src: url('fonts/Proxima\ Nova\ Thin.otf');
 }
 
 @font-face {
   font-family: 'Proxima Nova';
-  font-weight: bold;
+  font-weight: 600;
   src: url('fonts/Proxima\ Nova\ Bold.otf');
 }
 
 @font-face {
   font-family: 'Proxima Nova';
-  font-weight: normal;
+  font-weight: 800;
   src: url('fonts/Proxima\ Nova\ Extrabold.otf');
 }
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  font-family: 'Proxima Nova';
+  height: 150px;
+  display: flex;
+  /*background-color: grey;*/
+  justify-content: center;
+  align-items: center;
+  width:100%;
+}
+
+.logo-container {
+  display: flex;
+  color: #3b3b55;
+  width: 24%;
+}
+
+.logo-icon {
+  font-size: 60px;
+  margin: 10px;
+}
+
+/*.name-container {
+ 
+}*/
+
+.header-title {
+  font-size: 40px;
+  letter-spacing: 5px;
+  margin-top: 10px;
+}
+
+.header-subtitle {
+  font-size: 10px;
+  letter-spacing: 11px;
+  font-weight: 300;
+}
+
+/*-----------------------------------
+                 ADDRESS
+-----------------------------------*/
+.right-container {
+  width: 75%;
+  display: flex;
+}
+
+.location {
+  font-size: 13px;
+  color: #bbbbc6;
+  width: 400px;
+}
+.header-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: space-evenly;
+}
+.location-form {
+  margin-bottom: 20px;
+}
+.location-input {
+    font-size: 13px;
+    font-weight: bold;
+    width: 230px;
+    border: none;
+    color: #3b3b55;
+}
+.pencil-icon {
+  color: #3b3b55;
+}
+.search-form {
+  position: relative;
+}
+.question-form {
+  width:320px;
+  border-radius: 10px;
+  border: 1px solid #bbbbc6;
+  padding: 10px;
+  font-family: 'Proxima Nova';
+  }
+
+.glass-icon {
+  position: absolute;
+  font-size: 17px;
+  bottom: 10px;
+  right: 25px;
+}
+
+.icons {
+   position: relative;
+   width: 70px;
+}
+
+.header-img {
+  position: absolute;
+  height: 50px;
+}
+
+
+.pasta-plate {
+  top: 0px;
+  z-index: 300;
+}
+
+.rice-plate {
+  top: -10px;
+  left: 0;
+  z-index: 100;
+}
+
+.pizza-dish {
+  top: -15px;
+  left: 6px;
+  height: 40px;
+  
+}
+
+
