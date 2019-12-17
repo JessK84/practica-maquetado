@@ -1,23 +1,137 @@
 @font-face {
   font-family: 'Proxima Nova';
-  font-weight: normal;
+  font-weight: 500;
   src: url('fonts/Proxima\ Nova\ Regular.otf');
 }
 
 @font-face {
   font-family: 'Proxima Nova';
-  font-weight: lighter;
+  font-weight: 300;
   src: url('fonts/Proxima\ Nova\ Thin.otf');
 }
 
 @font-face {
   font-family: 'Proxima Nova';
-  font-weight: bold;
+  font-weight: 600;
   src: url('fonts/Proxima\ Nova\ Bold.otf');
 }
 
 @font-face {
   font-family: 'Proxima Nova';
-  font-weight: normal;
+  font-weight: 800;
   src: url('fonts/Proxima\ Nova\ Extrabold.otf');
 }
+
+*{
+  margin: 0;
+}
+
+section{
+  background-color: rgb(243, 242, 242);
+  display: flex;
+  font-family: 'Proxima Nova';
+  justify-content: center;
+}
+
+.image-pizza{
+  height: 450px;
+  min-width: 450px;
+  width: 450px;
+  display: flex;
+  border-radius: 50%;
+  background-color: white;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 10px;
+}
+
+img{
+  width: 80%;
+}
+
+.info{
+  width: 45%;  
+  margin: 20px 10px;
+}
+
+.food-description{
+  width: 60%;
+  font-size: 14px;
+}
+
+.ingredients{
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 4px;
+  background-color: white;
+  box-shadow: 0 5px 20px 0px rgba(0,0,0,0.5);
+  width: 400px;
+}
+
+.ingredient-text{
+  font-size: 14px;
+}
+
+.topping{
+  font-weight: 700;
+}
+
+.food-icon{
+  font-size: 20px;
+}
+
+.food{
+  width: 30%;
+  display: flex;
+
+}
+
+h1{
+  font-size: 45px;
+}
+
+.pepper-text{
+  font-weight: 600;
+  font-size: 16px;  
+  margin-left: 10px;
+}
+
+.pepper{
+  display: flex;
+}
+
+.pepper-red{
+  color:firebrick;
+}
+
+.pepper-grey{
+  color: grey;
+}
+
+.price-container{
+  display: flex;
+  height: 30px;
+}
+
+/*
+.number-selector{
+  background-color: white;
+  border-radius: 4px;
+}
+
+.number{
+  height: 30px;
+}*/
+
+.price{
+  border-radius: 4px;
+  background-color: white;
+  border: .5px solid lightslategrey;
+  padding: 5px;
+}
+
+span{
+  color: #db3e75;
+  font-weight: bold;
+}
+
