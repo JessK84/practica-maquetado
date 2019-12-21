@@ -327,13 +327,14 @@ header {
 .header-title {
   font-size: 30px;
   letter-spacing: 5px;
-  margin-top: 10px;
+  margin: 10px 0 0 0;
 }
 
 .header-subtitle {
   font-size: 8px;
   letter-spacing: 9px;
   font-weight: 300;
+  margin: 0;
 }
 
 /*-----------------------------------
@@ -342,8 +343,8 @@ header {
 .right-container {
   width: 65%;
   display: flex;
-  padding-bottom: 15px;
-  margin-left: 160px;
+  padding-bottom: 25px;
+  margin-left: 80px;
 }
 
 .location {
@@ -409,14 +410,18 @@ header {
 
 
 .pasta-plate {
-  top: 0px;
+  top: 5px;
   z-index: 300;
+    height: 70px;
+    width: 70px;  
 }
 
 .rice-plate {
   top: -10px;
   left: 0;
+  height: 70px;  
   z-index: 100;
+  width: 70px;
 }
 
 .pizza-dish {
@@ -442,16 +447,16 @@ header {
   color: rgb(209, 209, 209);
   box-shadow: 1px 1px 5px #ddd;
   border-bottom-right-radius: 15px;
-  border-bottom-left-radius: 15px;
+  border-bottom-left-radius: 15px; 
+
 }
 
 .shopping-cart-hdr {
   display: flex;
-  margin-bottom: 10px;
-  padding: 7px 0;
+  padding: 0;
   justify-content: space-evenly;
   font-size: 13px;
-  background-color: rgb(42, 42, 66);
+  background-color: rgb(42, 42, 66);  line-height: 2px;
 }
 
 .cart-amount {
@@ -464,6 +469,72 @@ header {
   padding-bottom: 0.1px;
 
 }
+@media (max-width: 970px) {
+  .right-container {
+    flex-direction: column;
+  }
+
+  .search-form {
+    width: 100%;
+  }
+
+  .question-form  {
+    width: 100%;
+  }
+  
+  .pencil-icon {
+    display: none;
+  }
+
+  .right-right {
+    display: none;
+  }
+
+  header {
+    height: 130px;
+  }
+}
+
+@media (max-width: 500px) {
+  header {
+    flex-direction: column;
+    height: 150px;
+  }
+  .logo-icon {
+    font-size: 240%;
+  }
+  .location-form {
+    display: none;
+  }
+
+  .logo-container {
+    width: 50%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .logo-container {
+    width: 50%;
+  }
+  .right-container {
+    padding: 0;
+    margin: 0;
+  }
+
+  .question-form {
+    width:100%;
+  }
+
+
+
+.pizza-dish {
+  top: -15px;
+  left: 6px;
+  height: 58px;  
+}
+
+
+/*END HEADER*/
 
 .container{
   width: 90%;
@@ -668,7 +739,7 @@ p{
 }
 
 @media (max-width: 600px) {
-  .card{
+  .card {
     width: 70%;
   }
 }
