@@ -232,19 +232,24 @@ input{
   h1{
     font-size: 36px;
   }
-
+  .image-pizza {
+    background-color: rgb(243, 242, 242);
+  }
   .image-pizza{
     min-width: 300px;
-    width: 300px;
-    height: 300px;
+    width: 50%;
+    box-shadow: none;
   }
 }
 
-@media(max-width: 800px){
+@media (max-width: 780px){
   .main-food{
     height: 700px;
-  }
 
+  }
+  .image-pizza {
+    background-color: rgb(243, 242, 242);
+  }
   h1{
     font-size: 24px;
   }
@@ -252,9 +257,10 @@ input{
   .food-description{
     width: 200px;
   }
-
-  .image-pizza{
-    margin-top: 200px;
+  
+  img {
+    width: 60%;
+    margin: 5% 10%;
   }
 
   .price-container{
@@ -280,8 +286,42 @@ input{
   }
 }
 
+@media (max-width: 580px) {
+  .main-food{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 900px;
+    text-align: center ;
+  }
+  .image-pizza {
+    background-color: rgb(243, 242, 242);
+    margin: 5px;
+    padding: 0px;
+    height: 170px;
 
+  }
+  .info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 3% 15%;
+    text-align: center;
 
+  }
+  .ingredients {
+    margin-top: 10px;
+    justify-content: column;
+  }
+  .cart {
+    justify-content: center;
+    margin-left: 5px;
+    margin-top: 10px;
+  }
+  .price-container {
+    margin: 0% 15%;
+  }
+}
 /*-----------------------------------------------------------------------------------*/
 
 
@@ -494,6 +534,7 @@ header {
   header {
     height: 130px;
   }
+
 }
 
 @media (max-width: 500px) {
@@ -526,7 +567,9 @@ header {
     width:100%;
   }
 
-
+  .glass-icon {
+    display: none;
+  }
 
 .pizza-dish {
   top: -15px;
